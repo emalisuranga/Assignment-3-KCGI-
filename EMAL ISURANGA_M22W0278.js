@@ -36,6 +36,16 @@ console.log(player.getLives()); // outputs 0
 
 // PART #2
 
+const numbers1 = {
+    numberOne:12,
+    numberTwo: 15
+};
+
+const numbers2 = {
+    numberOne:-5,
+    numberTwo: 41
+};
+
 function getObjectSum(numberObject1,numberObject2){
     let sum1 = 0;
     let sum2 = 0;
@@ -48,3 +58,5 @@ function getObjectSum(numberObject1,numberObject2){
     
     return Math.max(sum1,sum2);
 }
+
+console.log(getSum(numbers1,numbers2));
