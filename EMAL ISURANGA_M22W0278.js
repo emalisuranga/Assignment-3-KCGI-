@@ -21,6 +21,15 @@ class Player {
 }
 
 const player = new Player("EMAL");
+console.log(player.getLives()); // outputs 3
+player.loseLife(); // no output
+console.log(player.getLives()); // outputs 2
+player.loseLife(); // no output
+console.log(player.getLives()); // outputs 1
+player.loseLife(); // output will be "game over"
+console.log(player.getLives()); // outputs 0
+player.loseLife(); // no output
+console.log(player.getLives()); // outputs 0
 
 
 
