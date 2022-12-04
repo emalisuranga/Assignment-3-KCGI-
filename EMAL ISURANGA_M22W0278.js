@@ -7,6 +7,17 @@ class Player {
         this.playerName = name;
         this.playLife = 3;
     }
+      // Method
+    getLives () {
+        return this.playLife;
+    }
+
+    loseLife (){
+        if(this.playLife > 0) {
+            this.playLife = this.playLife - 1;
+        }
+        return this.playLife == 0 ?  console.log("game over") : this.playLife
+    }
 }
 
 const player = new Player("EMAL");
